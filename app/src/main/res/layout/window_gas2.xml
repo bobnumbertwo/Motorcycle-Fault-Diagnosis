@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vehicle_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/data_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:padding="1dp"
+        android:stretchColumns="*">
+        <TableRow
+            android:background="@drawable/textview_border2"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前轮一回(/S):" />
+
+            <EditText
+                android:id="@+id/txtLun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ems="2"
+                android:text="100"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btSetLun1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="设为默认"></Button>
+
+            <Button
+                android:layout_marginLeft="2dp"
+                android:minWidth="50dp"
+                android:id="@+id/btLun1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="测试"></Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/textview_border2"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前轮二回(/S):" />
+
+            <EditText
+                android:id="@+id/txtLun2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ems="2"
+                android:text="100"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btSetLun2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="设为默认"></Button>
+
+            <Button
+                android:layout_marginLeft="2dp"
+                android:minWidth="50dp"
+                android:id="@+id/btLun2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="测试"></Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/textview_border2"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后轮一回(/S):" />
+
+            <EditText
+                android:id="@+id/txtLun3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ems="2"
+                android:text="100"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btSetLun3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="设为默认"></Button>
+
+            <Button
+                android:layout_marginLeft="2dp"
+                android:minWidth="50dp"
+                android:id="@+id/btLun3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="测试"></Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/textview_border2"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="后轮二回(/S):" />
+
+            <EditText
+                android:id="@+id/txtLun4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ems="2"
+                android:text="100"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btSetLun4"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="设为默认"></Button>
+
+            <Button
+                android:layout_marginLeft="2dp"
+                android:minWidth="50dp"
+                android:id="@+id/btLun4"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="测试"></Button>
+
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

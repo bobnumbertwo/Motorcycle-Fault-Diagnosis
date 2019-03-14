@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textViewCmd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="14sp"
+    android:text="指令"
+    />
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--&lt;!&ndash; 下面两个是用来给 里的ListView赋值,&ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/textViewCmd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="14sp"-->
+        <!--android:text="指令"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/textViewRtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:layout_weight="1"-->
+        <!--android:text="返回"-->
+        <!--/>-->
+<!--</LinearLayout>-->
+
+

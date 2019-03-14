@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vehicle_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvInf"
+        android:layout_margin="10dp"
+        android:padding="3dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/textview_border"
+        android:text="OBD信息\n"
+        android:maxLines = "2000"
+        android:scrollbars = "vertical"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/data_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="3dip"
+        android:stretchColumns="*">
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tvInf"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="280dp"-->
+                <!--android:layout_span="3"-->
+                <!--android:background="@drawable/textview_border"-->
+                <!--android:text="TextView"-->
+                <!--android:textSize="20sp" />-->
+        <!--</TableRow>-->
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/txtCeshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_span="2"
+                android:ems="10"
+                android:hint="AT指令测试"
+                android:inputType="text"
+                 />
+
+            <Button
+                android:id="@+id/btCeshi"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="发送"></Button>
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/table4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btClearCode"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="清除故障码"></Button>
+
+            <Button
+                android:id="@+id/btClearScreen"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="清除屏幕"></Button>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btCurrInf"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="当前信息"></Button>
+
+            <Button
+                android:id="@+id/btHistoryInf"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="历史信息"></Button>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

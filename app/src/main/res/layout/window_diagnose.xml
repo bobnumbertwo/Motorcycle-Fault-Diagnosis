@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vehicle_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/data_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:padding="1dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:background="@drawable/textview_border2"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            >
+            <TextView
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轮速设置(/mS):" />
+
+            <EditText
+                android:id="@+id/txtLun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ems="2"
+                android:text="1"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btlun1"
+                android:layout_height="35dp"
+                android:minWidth="0dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="设为默认"></Button>
+
+            <Button
+                android:layout_marginLeft="2dp"
+                android:layout_height="35dp"
+                android:minWidth="0dp"
+                android:id="@+id/btlun"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="轮速测试"></Button>
+
+
+        </TableRow>
+        <TableRow
+            android:background="@drawable/textview_border2"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+            <GridLayout
+                android:layout_span="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="4"
+                android:orientation="vertical"
+                android:rowCount="2" >
+                <TextView
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="前轴泄压(/mS):" />
+
+                <EditText
+                    android:id="@+id/txtD1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:text="1"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:layout_row="0"        />
+
+                <Button
+                    android:id="@+id/btD1"
+                    android:layout_height="35dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:text="设为默认" />
+
+
+                <TextView
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="前轴增压(/mS):" />
+
+                <EditText
+                    android:id="@+id/txtD2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:text="1"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:layout_row="1"        />
+
+                <Button
+                    android:layout_height="35dp"
+                    android:id="@+id/btD2"
+                    android:layout_marginTop="3dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:text="设为默认" />
+
+                <Button
+                    android:id="@+id/btD"
+                    android:layout_marginLeft="10dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_column="3"
+                    android:layout_gravity="fill"
+                    android:minWidth="0dp"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:text="动态测试A" />
+            </GridLayout>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/textview_border2">
+            <GridLayout
+                android:layout_span="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="4"
+                android:orientation="vertical"
+                android:rowCount="2" >
+
+                <TextView
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="后轴泄压(/mS):" />
+
+                <EditText
+                    android:id="@+id/txtD3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:text="1"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:layout_row="0"        />
+
+                <Button
+                    android:layout_height="35dp"
+                    android:id="@+id/btD3"
+                    android:layout_marginTop="3dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:text="设为默认" />
+
+
+
+                <TextView
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="后轴增压(/mS):" />
+
+
+                <EditText
+                    android:id="@+id/txtD4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:text="1"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:layout_row="1"/>
+
+                <Button
+                    android:layout_height="35dp"
+                    android:id="@+id/btD4"
+                    android:layout_marginTop="3dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:text="设为默认" />
+
+                <Button
+                    android:id="@+id/btDB"
+                    android:layout_marginLeft="10dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_column="3"
+                    android:layout_gravity="fill"
+                    android:minWidth="0dp"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:text="动态测试B" />
+
+            </GridLayout>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:stretchColumns="*">
+        <TableRow>
+            <Button
+                android:layout_height="35dp"
+                android:id="@+id/btABS"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="ABS报警灯"></Button>
+
+            <Button
+                android:layout_height="35dp"
+                android:id="@+id/btDD"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_dark"
+                android:text="评估轮速传感器"></Button>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
